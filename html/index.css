@@ -1,33 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
-nav {
+html{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+.navegacion{
+    
+    background-color: #FCFCFD;
+    display: grid;
+    flex-direction:column;
+    grid-gap: 40PX;
+    grid-auto-flow: row;
+    grid-template-columns: auto auto 1fr;
+}
+
+.navegacion ul{
     display: flex;
-   
+    align-items: center;
+    padding: 2rem;
 }
 
+.listado{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.carousel {
-    width: 100vw;
-    height: 100vh;
+.listado li{
+    padding-right: 2rem;
+    list-style: none;
+}
+
+.insta a img{
+    height: 30px;
+    width: 30px;
+    margin-top: 25px;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1725px;
+    min-width: 350px;
+    overflow: hidden;
     position: relative;
+    text-align: center;
 }
 
-.slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-}
-
-.carousel-button {
-    position: absolute;
-    background: none;
-    border: none;
-    font-size: 4rem;
-    top: 50%;
+.container img {
+    width: 100%;
+    height: auto;
 }
 
 
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
