@@ -150,3 +150,193 @@ footer p {
     margin: 10px 0;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 30px 20px 0 10px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #333;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .listado {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .listado ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .listado li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navegacion.open .listado {
+        display: flex;
+    }
+
+    .navegacion{
+    
+        background-color: #FCFCFD;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        grid-auto-flow: row;
+        grid-template-columns: min-content;
+        font-family: 'DM sans';
+    }
+
+    .logo-container  img {
+        display: flex;
+       margin: 13px 0 0 5px;
+    }
+
+    .navegacion ul{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+ 
+    
+    .insta img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .listado {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .listado ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .listado li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navegacion.open .listado {
+        display: flex;
+    }
+
+    .navegacion{
+    
+        background-color: #FCFCFD;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        grid-auto-flow: row;
+        grid-template-columns: min-content;
+        font-family: 'DM sans';
+    }
+
+    .logo-container  img {
+        display: flex;
+       margin: 13px 0 0 5px;
+    }
+
+    .navegacion ul{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    } 
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+    
+    .contact-info {
+        
+        margin-right: 1rem;
+    }
+    
+    .contact-info h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-info p {
+        margin-bottom: 1rem;
+        text-decoration: none;
+        color: #95A1BB;
+    }
+    
+    .form-container p {
+        color: #95A1BB;
+    }
+    
+    .datosClientes {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        
+    }
+    
+    .field-group {
+        margin-bottom: 1rem;
+    }
+    .field-group  label{
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    .field-group input,
+    .field-group textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .enviar {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .enviar input {
+        background-color: #000;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .enviar input:hover {
+        background-color: #333;
+    }
+}
